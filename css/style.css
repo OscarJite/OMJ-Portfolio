@@ -72,9 +72,6 @@ nav ul li a:hover {
   height: 95vh;
   position: relative;
 }
-.main-text {
-  padding-left: 3rem;
-}
 .main-text p:nth-child(1) {
   font-weight: 500;
   font-size: 30px;
@@ -156,7 +153,7 @@ nav ul li a:hover {
 .about-text h3 {
   font-size: 17px;
   font-weight: 500;
-  line-height: 5px;
+  line-height: 20px;
   color: #38b6ff;
 }
 .about-text p {
@@ -543,8 +540,12 @@ nav .menu-btn {
     box-sizing: border-box;
   }
   .model{
+    height: 460px;
     left: 90%;
     transform: translateX(-90%);
+  }
+  .main-text{
+    top: 46%;
   }
   .about{
     width: 90%;

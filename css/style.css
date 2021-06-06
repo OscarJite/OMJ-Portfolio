@@ -75,6 +75,7 @@ nav ul li a:hover {
 .main-text p:nth-child(1) {
   font-weight: 500;
   font-size: 30px;
+  line-height: 0;
 }
 .main-text p:nth-child(2) {
   font-size: 70px;
@@ -94,8 +95,8 @@ nav ul li a:hover {
 }
 .main-text p {
   color: #42455a;
-  margin: 45px 0px 25px;
-  line-height: 0px;
+  margin: 23px 0px 25px;
+  line-height: 58px;
 }
 
 .portfolio-btn {

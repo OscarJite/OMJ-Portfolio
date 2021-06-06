@@ -538,13 +538,28 @@ footer p {
 nav .menu-btn {
   display: none;
 }
+@media(max-width:1000px){
+  *{
+    box-sizing: border-box;
+  }
+  .model{
+    left: 90%;
+    transform: translateX(-90%);
+  }
+  .about{
+    width: 90%;
+    border-radius: 10px;
+  }
+  .about-text{
+    width: 400px;
+  }
+}
 @media (max-width: 1140px) {
   .content {
     width: 100%;
   }
   .model {
-    width: 400px;
-    height: 400px;
+    height: 438px;
   }
   .main-text,
   .model {
@@ -642,6 +657,7 @@ nav .menu-btn {
   nav .menu-btn:checked ~ .menu {
     display: block;
   }
+
   #skills {
     width: 100%;
     justify-content: space-between;
@@ -667,6 +683,33 @@ nav .menu-btn {
   .recent-heading {
     text-align: center;
     padding: 0px 15px;
+  }
+}
+@media(max-width:750px){
+  .model{
+    display: none;
+  }
+  .about{
+    top: 0px;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 30px 0px;
+    align-items: center;
+  }
+  .about-text{
+    width: 90%;
+  }
+  #whatsnew{
+    top: 0px;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 30px 0px;
+    align-items: center;
+  }
+  .new-text{
+    width: 90%;
   }
 }
 @media (max-width: 720px) {

@@ -753,7 +753,7 @@ nav .menu-btn {
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
-  background-color: transparent;
+  background-color: #42455a;
   border-radius: 5px;
 }
 .side-bar a {

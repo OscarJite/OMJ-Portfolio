@@ -273,17 +273,18 @@ nav ul li a:hover {
   background-image: url("../images/service-2.png");
 }
 .box-3 {
-  background-image: url("../images/service-3.png");
+  background-image: url("../images/service-2.png");
 }
 .service-box span {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: #343647;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 40px;
   color: #e0ffff;
 }
 .service-box h2 {
@@ -679,9 +680,9 @@ nav ul li a:hover {
   font-size: 2.5rem;
   margin: 20px;
 }
-#contact img {
+/* #contact img {
   height: 300px;
-}
+} */
 .social-links a {
   padding: 1rem;
   font-size: 5rem;
@@ -704,12 +705,16 @@ nav ul li a:hover {
 .fa-envelope {
   color: #de5246;
 }
+.fa-linkedin-in{
+  color: #0077b5;
+}
 .fa-twitter:hover,
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-telegram-plane:hover,
 .fa-whatsapp:hover,
-.fa-envelope:hover {
+.fa-envelope:hover,
+.fa-linkedin-in:hover {
   transform: translateY(-10px);
   transition: all ease 0.2s;
 }
@@ -730,6 +735,9 @@ nav ul li a:hover {
 }
 .fa-envelope:hover {
   color: #7a2d26;
+}
+.fa-linkedin-in:hover{
+  color: #213257;
 }
 footer {
   display: flex;
@@ -753,21 +761,21 @@ nav .menu-btn {
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
-  background-color: #42455a;
-  border-radius: 5px;
+  background-color: transparent;
+  border-radius: 0px;
 }
 .side-bar a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding: 0px;
   line-height: 0px;
   background-color: #42455a;
   border: 1px solid #343647;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 3px;
   transition: 0.5s;
 }
 .side-bar i {

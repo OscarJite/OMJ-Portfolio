@@ -22,7 +22,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   background: rgba(255, 255, 255, 0.05);
@@ -48,7 +47,6 @@ nav ul {
 .new:hover {
   border-bottom: 3px solid #00c2cb;
   color: #ffffff;
-  /* transition: all ease 0.2s; */
   transform: translateY(-4px);
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
     0px 0px 40px #00c2cb, 0px 0px 80px #fff;
@@ -121,15 +119,7 @@ nav ul li a:hover {
   font-size: 15px;
   font-weight: 200;
 }
-.portfolio-btn {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #e0ffff;
-  font-family: "Asap", sans-serif;
-}
+.portfolio-btn,
 .down-cv {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -137,7 +127,6 @@ nav ul li a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #e0ffff;
-  border: none;
   font-family: "Asap", sans-serif;
 }
 .portfolio-btn:active,
@@ -145,15 +134,11 @@ nav ul li a:hover {
   transform: translateY(-2px);
   transition: 34ms;
 }
-.down-cv:hover {
+.down-cv:hover,
+.portfolio-btn:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
     0px 0px 40px #00c2cb, 0px 0px 80px #fff;
-}
-.portfolio-btn:hover {
-  color: #e0ffff;
-  text-shadow: 0px 0px 10px #42455a, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
-    0px 0px 40px #00c2cb, 0px 0px 80px #42455a;
 }
 .model {
   height: 560px;
@@ -166,8 +151,7 @@ nav ul li a:hover {
 .about {
   width: 75%;
   height: 350px;
-  /* background-color: #42455a; */
-  background-image: url("../images/bgdark.png");
+  background-color: #42455a;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -201,7 +185,8 @@ nav ul li a:hover {
   font-size: 20px;
   padding-bottom: 0.5rem;
 }
-.main-text a {
+.main-text a,
+.about a {
   padding: 0.8rem;
   border-radius: 7px;
   font-weight: bold;
@@ -212,29 +197,6 @@ nav ul li a:hover {
   border-radius: 7px;
   font-weight: bold;
   font-size: 15px;
-}
-.about a {
-  padding: 0.8rem;
-  border-radius: 7px;
-  font-weight: bold;
-  font-size: 15px;
-}
-.about .portfolio-btn {
-  color: #e0ffff;
-  font-family: "Asap", sans-serif;
-}
-.about .down-cv {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-family: "Asap", sans-serif;
-}
-.about .down-cv:hover {
-  color: #e0ffff;
-  text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
-    0px 0px 40px #00c2cb, 0px 0px 80px #fff;
 }
 #services {
   background-image: url("../images/bg.png");
@@ -274,20 +236,8 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.box-1 {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.box-2 {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
+.box-1,
+.box-2,
 .box-3 {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
@@ -318,7 +268,6 @@ nav ul li a:hover {
   margin: 0px 0px 20px 0px;
   color: #e0ffff;
 }
-.recent-btn,
 .client-box a {
   width: 190px;
   height: 44px;
@@ -335,14 +284,6 @@ nav ul li a:hover {
   background-position: center;
   background-size: 100px;
 }
-.recent-btn:hover,
-.client-box a:hover,
-.contact-input a:hover {
-  background-color: #00c2cb;
-  color: #ffffff;
-  transition: all ease 0.2s;
-}
-
 #skills {
   display: flex;
   justify-content: space-around;
@@ -378,7 +319,7 @@ nav ul li a:hover {
   object-fit: contain;
 }
 .skill-heading span {
-  color: #36b7b5;
+  color: #e0ffff;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -462,33 +403,17 @@ nav ul li a:hover {
   letter-spacing: 2px;
   font-size: 1.1rem;
 }
-.recent-heading h3 {
-  color: #00c2cb;
-  font-size: 3rem;
-  margin: 0px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding-bottom: 1rem;
-}
+.recent-heading h3,
 .client-heading h3,
 #contact h3 {
-  color: #00c2cb;
+  color: #e0ffff;
   font-size: 3rem;
   margin: 0px;
   font-weight: 400;
   letter-spacing: 1px;
 }
-.recent-img {
-  margin: 0px 40px;
-}
-.recent-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-.recent-btn {
-  width: 190px;
-  margin-top: -20px;
+.recent-heading h3{
+  padding bottom: 1rem
 }
 .p-box-container,
 .service-container {
@@ -699,9 +624,6 @@ nav ul li a:hover {
   font-size: 2.5rem;
   margin: 20px;
 }
-/* #contact img {
-  height: 300px;
-} */
 .social-links a {
   padding: 1rem;
   font-size: 5rem;

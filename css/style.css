@@ -152,6 +152,8 @@ nav ul li a:hover {
   background-color: #42455a;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   margin: -7% auto 20px auto;
   position: relative;
@@ -230,6 +232,8 @@ nav ul li a:hover {
   padding: 7px;
   margin: 15px;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #42455a;
 }
 .service-box span {
@@ -422,6 +426,8 @@ nav ul li a:hover {
   padding: 10px;
   margin: 20px;
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .project-box img {
   width: 100%;
@@ -473,8 +479,6 @@ nav ul li a:hover {
 }
 #reviews {
   width: 100%;
-  border-top: 1px solid rgdb(58, 58, 58, 0.03);
-  border-bottom: 1px solid rgdb(58, 58, 58, 0.03);
   padding: 50px 0px;
   background-image: url("../images/bg.png");
   background-position: center;
@@ -559,6 +563,8 @@ nav ul li a:hover {
   background-image: url("../images/bgdark.png");
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgdb(58, 58, 58, 0.03);
+  border-bottom: 1px solid rgdb(58, 58, 58, 0.03);
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -602,9 +608,10 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   margin: 40px 0px;
-  background-image: url(../images/bgdark.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-size: 100px;
+  background-color: #42455a;
 }
 #contact h3 {
   font-size: 2.5rem;

@@ -1,5 +1,4 @@
 @charset "utf=8";
-@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 
 body {
   margin: 0px;
@@ -107,7 +106,8 @@ nav ul li a:hover {
   line-height: 58px;
 }
 
-.main-text a {
+.main-text a,
+.about a {
   width: 150px;
   height: 42px;
   outline: none;
@@ -127,16 +127,25 @@ nav ul li a:hover {
   color: #e0ffff;
   font-family: "Asap", sans-serif;
 }
-.portfolio-btn:active,
-.down-cv:active {
-  transform: translateY(-2px);
-  transition: 34ms;
-}
 .down-cv:hover,
 .portfolio-btn:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
     0px 0px 40px #00c2cb, 0px 0px 80px #fff;
+}
+.side-bar .side-btn::before{
+  content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.side-bar .side-btn::before{
+  background: #00c2cb;
 }
 .model {
   height: 560px;
@@ -185,19 +194,6 @@ nav ul li a:hover {
   font-size: 20px;
   padding-bottom: 0.5rem;
 }
-.main-text a,
-.about a {
-  padding: 0.8rem;
-  border-radius: 7px;
-  font-weight: bold;
-  font-size: 15px;
-}
-.main-text button {
-  padding: 0.8rem;
-  border-radius: 7px;
-  font-weight: bold;
-  font-size: 15px;
-}
 #services {
   background-image: url("../images/bg.png");
   background-position: center;
@@ -231,7 +227,7 @@ nav ul li a:hover {
   flex-direction: column;
   padding: 7px;
   margin: 15px;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #42455a;
@@ -404,7 +400,7 @@ nav ul li a:hover {
   letter-spacing: 1px;
 }
 .recent-heading h3{
-  padding bottom: 1rem
+  padding-bottom: 1rem
 }
 .p-box-container,
 .service-container {
@@ -425,7 +421,7 @@ nav ul li a:hover {
   flex-direction: column;
   padding: 10px;
   margin: 20px;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -723,12 +719,12 @@ nav .menu-btn {
   line-height: 0px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   transition: 0.5s;
+  overflow: hidden;
 }
 .side-bar i {
   color: #e0ffff;

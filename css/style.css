@@ -207,7 +207,7 @@ nav ul li a:hover {
 #services {
   background-image: url("../images/bg.png");
   background-position: center;
-  background-size: 100px;
+  background-size: 1000px;
   background-color: #42455a;
   display: flex;
   justify-content: center;
@@ -291,13 +291,6 @@ nav ul li a:hover {
   padding-bottom: 3rem;
 }
 
-#tools {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin: auto auto 50px auto;
-}
 .skill-text {
   width: 400px;
 }
@@ -306,7 +299,7 @@ nav ul li a:hover {
   height: 600px;
   background-image: url("../images/bg.png");
   background-position: center;
-  background-size: 100px;
+  background-size: 1000px;
   background-color: #42455a;
   border-radius: 54% 46% 70% 30% / 59% 52% 48% 41%;
 }
@@ -370,17 +363,6 @@ nav ul li a:hover {
 .fa-github {
   color: #6e5494;
 }
-.tool-box {
-  display: flex;
-  margin: 0 20px;
-  color: #00c2cb;
-}
-.tool-box i {
-  padding-right: 1rem;
-}
-.t-caption {
-  padding-left: 1rem;
-}
 #recent {
   display: flex;
   justify-content: center;
@@ -389,7 +371,7 @@ nav ul li a:hover {
   flex-direction: column;
   background-image: url("../images/bg.png");
   background-position: center;
-  background-size: 100px;
+  background-size: 1000px;
   background-color: #42455a;
 }
 .recent-heading span,
@@ -521,7 +503,7 @@ nav ul li a:hover {
   padding: 50px 0px;
   background-image: url("../images/bg.png");
   background-position: center;
-  background-size: 100px;
+  background-size: 1000px;
   background-color: #42455a;
 }
 .client-heading {
@@ -649,7 +631,7 @@ nav ul li a:hover {
   margin: 40px 0px;
   background-image: url("../images/bg.png");
   background-position: center;
-  background-size: 100px;
+  background-size: 1000px;
   background-color: #42455a;
 }
 #contact h3 {

@@ -28,14 +28,13 @@
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#whatsnew" class="new">What's New?</a>
       </nav>
 
       <div class="main-text">
         <p>Hello,</p>
         <p>I'm OMJ</p>
-        <p>Self-taught Frontend Web Developer</p>
-        <p> I create websites so buisnesses and individuals find a home online.</p>
+        <p>Frontend Web Developer</p>
+        <p> I create websites so buisnesses find a home online.</p>
 
         <a href="Oscar's CV.pdf" download="Oscar's CV" class="down-cv"
           >Download CV</a
@@ -45,16 +44,16 @@
       <img src="images/Oscar.png" class="model" alt="Oscar's Photo" />
     </section>
     <!--About Me-->
-    <div class="about">
+    <div class="about  reveal fade-bottom">
       <div class="about-text">
         <h1>About Me</h1>
         <p>
-          Hello, My name is Oscar Mudiaga Jite-Orimiono and you are welcome
-          to my Portfolio site. I've being a web developer since 2020, during the global COVID-19 pandemic.
+          Hello, My name is Oscar Mudiaga Jite-Orimiono, I'm a self taught frontend web developer and you are welcome
+          to my Portfolio site. I've being a web developer since 2020, starting during the global COVID-19 pandemic.
         </p>
         <p>I write clean efficient code. My websites are responsive, mobile and user friendly.</p>
         <p>
-          The digital space is full of endless possibilities, let's explore it together!
+          The world is becoming more and more digital and this space is full of endless possibilities, let's explore it together!
         </p>
         <a href="Oscar's CV.pdf" download="Oscar's CV" class="down-cv"
           >Download CV</a
@@ -63,7 +62,7 @@
       </div>
     </div>
     <!--Services-->
-    <section id="services">
+    <section id="services" class="reveal fade-bottom">
       <div class="services-text">
         <h1>Services</h1>
         <h3>I provide the following services</h3>
@@ -93,8 +92,8 @@
       </div>
     </section>
     <!--Skills-->
-   <section id="skills">
-      <div class="skill-text">
+    <section id="skills">
+      <div class="skill-text  reveal fade-left">
         <div class="skill-heading">
           <span>Skills</span>
           <h2>My Expertise</h2>
@@ -124,6 +123,7 @@
               <p>Vanilla Js and jQuery.</p>
             </div>
           </div>
+
           <div class="skill-box">
             <i class="fab fa-wordpress"></i>
             <div class="s-box-text">
@@ -133,12 +133,12 @@
           </div>
         </div>
       </div>
-      <div class="skill-img">
+      <div class="skill-img  reveal fade-right">
         <img src="images/skills-img.png" alt="" />
       </div>
     </section>
-
-    <section id="recent">
+    <!--Projects-->
+    <section id="recent" class="reveal fade-bottom">
       <div class="recent-heading">
         <span>Recent work</span>
         <h3>My Projects</h3>
@@ -196,7 +196,8 @@
         </div>
       </div>
     </section>
-    <section id="reviews">
+    <!--Reviews-->
+    <section id="reviews" class="reveal fade-bottom">
       <div class="client-heading">
         <span>Comments</span>
         <h3>Reviews</h3>
@@ -240,56 +241,10 @@
           </p>
           <h4 class="review-caption">K. A Lynus for Kalinks blog.</h4>
         </div>
-
-        <!-- <div class="client-box">
-          <img src="images/recent-1.png" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>
-            If you're looking for random paragraphs, you've come to the right
-            places. When a random word or a random sentence isn't quite enough,
-            the next logical step is to find a random paragraph.
-          </p>
-          <a href="#">Read More</a>
-        </div>
-
-        <div class="client-box">
-          <img src="images/client-3.png" alt="" />
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-          </div>
-          <p>
-            If you're looking for random paragraphs, you've come to the right
-            places. When a random word or a random sentence isn't quite enough,
-            the next logical step is to find a random paragraph.
-          </p>
-          <a href="#">Read More</a>
-        </div> -->
       </div>
     </section>
-    <!--What's New-->
-    <section id="whatsnew">
-      <div class="new-text">
-        <h1>What's new!?</h1>
-        <p><strong>Shadows</strong> and <b>Light</b></p>
-        <p>What if Shadows had colours?</p>
-        <p>
-          Manipulating the box-shadow and text-shadow elements can help you
-          achieve this effect.
-        </p>
-        <p>I'll share new stuff as soon as I learn it so watch this div!</p>
-      </div>
-    </section>
-    <section id="contact">
+    <!--Contact-->
+    <section id="contact" class="reveal fade-bottom">
       <h3>Don't hesitate to reach out...</h3>
       <div class="social-links">
         <a href="https://wa.me/message/MO7HSOQJYJIEM1" target="_blank"
@@ -319,7 +274,7 @@
     </section>
 
     <footer>
-      <p>Built by OMJ<i class="fas fa-smile-wink"></i></p>
+      <p>Built by OMJ <i class="fas fa-smile-wink"></i></p>
       <p>&copy;Copyright 2021 - OMJ</p>
     </footer>
     <!--Side Bar-->
@@ -336,7 +291,6 @@
       src="https://kit.fontawesome.com/1cc9771c1e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="js/jquery.js"></script>
 
     <script type="text/javascript">
@@ -365,5 +319,28 @@
         });
       });
     </script>
+
+    
+<script type="text/javascript">
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener('scroll', reveal);
+</script>
+
   </body>
 </html>

@@ -618,8 +618,8 @@ nav ul li a:hover {
 footer {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid rgba(232, 232, 232, 0.5);
-  background-color: #22232e;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #42455a;
 }
 .fa-smile-wink {
   color: #ff9529;

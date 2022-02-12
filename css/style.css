@@ -34,10 +34,8 @@ nav {
 .logo a {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #ffffff;
+  color: #00c2cb;
   font-size: 2rem;
-  text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 10px #00c2cb,
-    0px 0px 20px #00c2cb, 0px 0px 20px #fff;
   letter-spacing: 0.5px;
 }
 nav ul {
@@ -111,35 +109,27 @@ nav ul li a:hover {
   font-size: 15px;
   font-weight: 200;
 }
-.portfolio-btn,
-.down-cv {
+.btn {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: #e0ffff;
   font-family: "Asap", sans-serif;
 }
-.down-cv:hover,
-.portfolio-btn:hover {
+.btn-primary {
+  background: rgba(0, 194, 203, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #00c2cb;
+  font-family: "Asap", sans-serif;
+}
+.btn:hover,
+.btn-primary:hover {
   color: #ffffff;
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
     0px 0px 40px #00c2cb, 0px 0px 80px #fff;
-}
-.side-bar .side-btn::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -5px;
-  width: 30px;
-  height: 10px;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-.side-bar .side-btn::before {
-  background: #00c2cb;
 }
 .model {
   height: 560px;
@@ -254,14 +244,6 @@ nav ul li a:hover {
   margin: auto auto 50px auto;
   padding-top: 2rem;
   padding-bottom: 3rem;
-}
-
-#tools {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin: auto auto 50px auto;
 }
 .skill-text {
   width: 400px;
@@ -434,14 +416,8 @@ nav ul li a:hover {
 }
 .project-box a {
   align-items: center;
-  color: #e0ffff;
   font-weight: 500;
   padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 7px;
   margin: 0px;
 }
@@ -522,7 +498,7 @@ nav ul li a:hover {
   text-align: center;
   color: #00c2cb;
 }
-#contact {
+/* #contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -538,8 +514,32 @@ nav ul li a:hover {
 .social-links a {
   padding: 1rem;
   font-size: 5rem;
+} */
+.social-links {
+  position: absolute;
+  display: flex;
+  left: -40px;
+  transform: translateY(10px);
 }
-.fa-whatsapp {
+.social-links li {
+  list-style: none;
+}
+.social-links li a {
+  display: inline-block;
+  width: 40px;
+  margin: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/* .fa-whatsapp {
   color: #fff;
   text-shadow: 0px 0px 10px #25d366, 0px 0px 20px #fff, 0px 0px 20px #25d366,
     0px 0px 20px #fff;
@@ -578,7 +578,7 @@ nav ul li a:hover {
   color: #fff;
   text-shadow: 0px 0px 10px #6e5494, 0px 0px 20px #fff, 0px 0px 20px #6e5494,
     0px 0px 20px #fff;
-}
+} */
 .fa-twitter:hover,
 .fa-facebook:hover,
 .fa-instagram:hover,
@@ -587,33 +587,39 @@ nav ul li a:hover {
 .fa-envelope:hover,
 .fa-linkedin-in:hover,
 .fa-github:hover {
-  transform: translateY(-1px);
-  transition: all ease 0.2s;
-  font-size: 5.1rem;
+  color: #fff;
 }
 .fa-whatsapp:hover {
-  color: #075e54;
+  text-shadow: 0px 0px 10px #25d366, 0px 0px 20px #fff, 0px 0px 20px #25d366,
+    0px 0px 20px #fff;
 }
 .fa-telegram-plane:hover {
-  color: #015c80;
+  text-shadow: 0px 0px 10px #3b5998, 0px 0px 20px #fff, 0px 0px 20px #3b5998,
+    0px 0px 20px #fff;
 }
 .fa-instagram:hover {
-  color: #ab2452;
+  text-shadow: 0px 0px 10px #e1306c, 0px 0px 20px #fff, 0px 0px 20px #e1306c,
+    0px 0px 20px #fff;
 }
 .fa-twitter:hover {
-  color: #0287ba;
+  text-shadow: 0px 0px 10px #00acee, 0px 0px 20px #fff, 0px 0px 20px #00acee,
+    0px 0px 20px #fff;
 }
 .fa-facebook:hover {
-  color: #213257;
+  text-shadow: 0px 0px 10px #3b5998, 0px 0px 20px #fff, 0px 0px 20px #3b5998,
+    0px 0px 20px #fff;
 }
 .fa-envelope:hover {
-  color: #7a2d26;
+  text-shadow: 0px 0px 10px #de5246, 0px 0px 20px #fff, 0px 0px 20px #de5246,
+    0px 0px 20px #fff;
 }
 .fa-linkedin-in:hover {
-  color: #213257;
+  text-shadow: 0px 0px 10px #0077b5, 0px 0px 20px #fff, 0px 0px 20px #0077b5,
+    0px 0px 20px #fff;
 }
 .fa-github:hover {
-  color: #372a4a;
+  text-shadow: 0px 0px 10px #6e5494, 0px 0px 20px #fff, 0px 0px 20px #6e5494,
+    0px 0px 20px #fff;
 }
 footer {
   display: flex;
@@ -632,7 +638,7 @@ footer p {
 nav .menu-btn {
   display: none;
 }
-.side-bar {
+/* .side-bar {
   position: fixed;
   top: 50%;
   right: 0px;
@@ -666,7 +672,7 @@ nav .menu-btn {
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #00c2cb, 0px 0px 20px #00c2cb,
     0px 0px 40px #00c2cb, 0px 0px 80px #fff;
   font-size: 20px;
-}
+} */
 .reveal {
   opacity: 0;
 }

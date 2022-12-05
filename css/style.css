@@ -291,7 +291,8 @@ nav ul li a:hover {
 .fa-html5,
 .fa-js-square,
 .fa-css3-alt,
-.fa-wordpress {
+.fa-wordpress,
+.fa-markdown {
   padding-right: 5px;
   font-size: 20px;
 }
@@ -306,6 +307,9 @@ nav ul li a:hover {
 }
 .fa-wordpress {
   color: #21759b;
+}
+.fa-markdown{
+  color: #808080;
 }
 #recent {
   display: flex;

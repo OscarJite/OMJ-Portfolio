@@ -140,10 +140,6 @@ footer p {
   font-size: 0.9rem;
 }
 @media (max-width: 768px) {
-  .text p{
-    text-align: center;
-    width: 90%;
-  }
   table {
     width: 90%;
     font-size: 14px;

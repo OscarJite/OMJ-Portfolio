@@ -205,8 +205,6 @@ nav ul li a:hover {
 .portfolio-text h3 {
   font-weight: 500;
   color: #e0ffff;
-  font-size: 25px;
-  line-height: 7px;
 }
 .service-box {
   width: 300px;
@@ -702,8 +700,8 @@ nav .menu-btn {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  #contact img {
-    height: 200px;
+  .portfolio-container{
+    width: 350px;
   }
   footer {
     justify-content: center;

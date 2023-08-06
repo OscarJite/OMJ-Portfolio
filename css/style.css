@@ -88,7 +88,7 @@ nav ul li a:hover {
 }
 .main-text {
   position: absolute;
-  left: 13%;
+  left: 20%;
   top: 42%;
   transform: translate(-13%, -42%);
 }
@@ -136,7 +136,7 @@ nav ul li a:hover {
   height: 560px;
   position: absolute;
   bottom: 0px;
-  left: 70%;
+  left: 80%;
   transform: translateX(-70%);
   filter: grayscale(30%);
 }

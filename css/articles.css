@@ -60,7 +60,7 @@ nav {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.fa-twitter:hover,
+.fa-x-twitter:hover,
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-telegram-plane:hover,
@@ -71,7 +71,7 @@ nav {
 .fa-codepen:hover {
   color: #fff;
 }
-.fa-twitter:hover {
+.fa-x-twitter:hover {
   text-shadow: 0px 0px 10px #00acee, 0px 0px 20px #fff, 0px 0px 20px #00acee,
     0px 0px 20px #fff;
 }

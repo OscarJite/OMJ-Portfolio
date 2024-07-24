@@ -423,7 +423,7 @@ nav ul li a:hover {
   color: #fff;
 }
 .fa-x-twitter:hover {
-  text-shadow: 0px 0px 10px #00acee, 0px 0px 20px #fff, 0px 0px 20px #00acee,
+  text-shadow: 0px 0px 10px #fff, 0px 0px 20px #fff, 0px 0px 20px #fff,
     0px 0px 20px #fff;
 }
 .fa-envelope:hover {
